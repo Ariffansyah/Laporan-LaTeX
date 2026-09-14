@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage[hidelinks]{hyperref}
+
+% ==== ISI TEMPLATE DI SINI ====
+\newcommand{\judulLaporan}{LAPORAN [MATA KULIAH]}
+\newcommand{\subJudul}{``[JUDUL / TEMA LAPORAN]''}
+\newcommand{\logoFile}{logo.png}
+\newcommand{\dosenPengampu}{[Nama Dosen 1]\\{}[Nama Dosen 2]}
+\newcommand{\penyusun}{%
+[Nama Mahasiswa 1] & ([NIM]) \\{}
+[Nama Mahasiswa 2] & ([NIM]) \\{}
+[Nama Mahasiswa 3] & ([NIM]) \\{}
+}
+\newcommand{\prodi}{PRODI [Nama Prodi]}
+\newcommand{\jurusan}{JURUSAN [Nama Jurusan]}
+\newcommand{\fakultas}{FAKULTAS [Nama Fakultas]}
+\newcommand{\universitas}{UNIVERSITAS [Nama Universitas]}
+\newcommand{\tahun}{2026}
+% ==== AKHIR BAGIAN YANG PERLU DIUBAH ====
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{1cm}
+{\bfseries \judulLaporan \par}
+\vspace{0.8cm}
+{\bfseries \subJudul \par}
+\vfill
+\includegraphics[width=4.5cm]{\logoFile}
+\vfill
+{\bfseries DOSEN PENGAMPU :\par}
+\vspace{0.2cm}
+{\bfseries \dosenPengampu \par}
+\vspace{1cm}
+{\bfseries DISUSUN OLEH :\par}
+\vspace{0.3cm}
+\begin{tabular}{l@{\hspace{2cm}}l}
+\penyusun
+\end{tabular}
+\vfill
+{\bfseries \prodi \par}
+\vspace{0.3cm}
+{\bfseries \jurusan \par}
+\vspace{0.3cm}
+{\bfseries \fakultas \par}
+\vspace{0.3cm}
+{\bfseries \universitas \par}
+\vspace{0.6cm}
+{\bfseries \tahun \par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section*{Kata Pengantar}
+[Isi kata pengantar]
+
+\newpage
+\section{Pendahuluan}
+\subsection{Latar Belakang}
+[Isi latar belakang]
+
+\subsection{Rumusan Masalah}
+[Isi rumusan masalah]
+
+\subsection{Tujuan}
+[Isi tujuan]
+
+\section{Pembahasan}
+[Isi pembahasan, contoh sitasi: \cite{lankton2008introduction}]
+
+\section{Penutup}
+\subsection{Kesimpulan}
+[Isi kesimpulan]
+
+\subsection{Saran}
+[Isi saran]
+
+\bibliographystyle{apalike}
+\bibliography{pustaka}
+
+\end{document}
